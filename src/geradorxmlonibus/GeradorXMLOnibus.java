@@ -25,9 +25,10 @@ public class GeradorXMLOnibus {
 
     /**
      * @param args the command line arguments
-     */
+     */    
     public static void main(String[] args) {
-        File file = new File("//home//silas//Downloads//quadro_horario_rmbh");
+        final String path = "";
+        File file = new File(path);
         ArrayList<Linha> arrLinhas = new ArrayList<Linha>();
         LinhasUtil linhasUtil = new LinhasUtil();
         try {

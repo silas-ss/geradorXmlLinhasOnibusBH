@@ -125,10 +125,12 @@ public class LinhasUtil {
                 raiz.appendChild(elementLinha);
             }
             
+            final String pathXml = "";
+            
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File("//home//silas//Downloads//quadro_horarios.xml"));
+            StreamResult result = new StreamResult(new File(pathXml));
             
             transformer.transform(source, result);
         } catch (ParserConfigurationException ex) {
